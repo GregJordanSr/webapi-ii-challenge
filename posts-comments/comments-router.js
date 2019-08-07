@@ -37,11 +37,10 @@ router.get('/:id/comments', (req, res) => {
         } else {
             res.status(200).json(commentId)
         }
-        .catch( error => {
-            res.status(500).json({ error: "The comments information could not be retrieved. "})
-        })
-    });
-    
+    })
+    .catch( error => {
+        res.status(500).json({ error: "The comments information could not be retrieved. "})
+    })
 });
 
 // export default router;
