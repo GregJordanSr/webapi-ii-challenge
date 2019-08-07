@@ -7,12 +7,5 @@ const postComments = require('../data/db');
 
 
 
-
-
-
-
-
-
-
 // export default router;
 module.exports = router;
