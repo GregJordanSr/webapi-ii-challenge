@@ -36,10 +36,10 @@ router.get('/:id', (req, res) => {
     const { id } = req.params;
     
     postComments.findById(id)
-        .then(comment => { 
+        .then(post => { 
             if (id) {
                 first()
-                res.status(200).json(comment) 
+                res.status(200).json(post) 
             } else {
                 res.status(404).json({ message: "The post with the specified ID does not exist." });
             }
